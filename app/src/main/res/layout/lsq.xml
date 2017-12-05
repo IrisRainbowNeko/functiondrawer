@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="wrap_content"
+	android:layout_width="wrap_content">
+
+	<include layout="@layout/title"/>
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation="vertical"
+		android:gravity="center">
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:orientation="horizontal"
+			android:gravity="center"
+			android:focusable="true"
+			android:focusableInTouchMode="true">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="y="
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:layout_width="wrap_content"/>
+
+			<EditText
+				android:layout_height="wrap_content"
+				android:ems="10"
+				android:layout_width="wrap_content"
+				android:id="@+id/lsqEditText1"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:orientation="horizontal">
+
+			<ListView
+				android:layout_height="280dp"
+				android:layout_width="40dp"
+				android:id="@+id/lsqListView1"/>
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:orientation="vertical"
+				android:gravity="center">
+
+				<LinearLayout
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:orientation="horizontal">
+
+					<Button
+						android:layout_height="50dp"
+						android:text="1"
+						android:layout_width="50dp"
+						android:id="@+id/lsqButton01"
+						android:background="@drawable/button"
+						android:layout_marginRight="20dp"/>
+
+					<Button
+						android:layout_height="50dp"
+						android:text="2"
+						android:layout_width="50dp"
+						android:id="@+id/lsqButton02"
+						android:background="@drawable/button"/>
+
+					<Button
+						android:layout_height="50dp"
+						android:text="3"
+						android:layout_width="50dp"
+						android:id="@+id/lsqButton03"
+						android:background="@drawable/button"
+						android:layout_marginLeft="20dp"/>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:orientation="horizontal">
+
+					<Button
+						android:layout_height="50dp"
+						android:text="4"
+						android:layout_width="50dp"
+						android:id="@+id/lsqButton04"
+						android:background="@drawable/button"
+						android:layout_marginRight="20dp"/>
+
+					<Button
+						android:layout_height="50dp"
+						android:text="5"
+						android:layout_width="50dp"
+						android:id="@+id/lsqButton05"
+						android:background="@drawable/button"/>
+
+					<Button
+						android:layout_height="50dp"
+						android:text="6"
+						android:layout_width="50dp"
+						android:id="@+id/lsqButton06"
+						android:background="@drawable/button"
+						android:layout_marginLeft="20dp"/>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:orientation="horizontal">
+
+					<Button
+						android:layout_height="50dp"
+						android:text="7"
+						android:layout_width="50dp"
+						android:id="@+id/lsqButton07"
+						android:background="@drawable/button"
+						android:layout_marginRight="20dp"/>
+
+					<Button
+						android:layout_height="50dp"
+						android:text="8"
+						android:layout_width="50dp"
+						android:id="@+id/lsqButton08"
+						android:background="@drawable/button"/>
+
+					<Button
+						android:layout_height="50dp"
+						android:text="9"
+						android:layout_width="50dp"
+						android:id="@+id/lsqButton09"
+						android:background="@drawable/button"
+						android:layout_marginLeft="20dp"/>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:orientation="horizontal">
+
+					<Button
+						android:layout_height="50dp"
+						android:text="0"
+						android:layout_width="50dp"
+						android:id="@+id/lsqButton00"
+						android:background="@drawable/button"
+						android:layout_marginRight="20dp"/>
+
+					<Button
+						android:layout_height="50dp"
+						android:text="←"
+						android:layout_width="50dp"
+						android:id="@+id/lsqButtontg"
+						android:background="@drawable/button"/>
+
+					<Button
+						android:layout_height="50dp"
+						android:text="确定"
+						android:layout_width="50dp"
+						android:onClick="on2"
+						android:background="@drawable/button"
+						android:layout_marginLeft="20dp"/>
+
+				</LinearLayout>
+
+				<GridView
+					android:layout_width="match_parent"
+					android:layout_height="100dp"
+					android:id="@+id/lsqGridView1"
+					android:numColumns="3">
+
+				</GridView>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<GridView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/lsqGridView2"
+		android:numColumns="9"
+		android:layout_alignParentBottom="true">
+
+	</GridView>
+
+	<Button
+		android:layout_height="wrap_content"
+		android:text="打开小键盘"
+		android:layout_width="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentRight="true"
+		android:id="@+id/xianshi"/>
+
+</RelativeLayout>
+

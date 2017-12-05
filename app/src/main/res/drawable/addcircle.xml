@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--可以在item里面创建各种各样的XMLDrawable-->
+    <item>
+		<shape
+			xmlns:android= "http://schemas.android.com/apk/res/android"
+			android:shape= "oval"
+			android:useLevel= "false" >
+			
+			<solid android:color= "#66CCFF" />
+		</shape>
+	</item>
+	<item android:left="50dip" android:top="50dip" android:right="50dip" android:bottom="50dip">
+        <bitmap android:src="@drawable/tj"
+			android:gravity="center"/>
+    </item>
+</layer-list>

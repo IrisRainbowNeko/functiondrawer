@@ -1,0 +1,2 @@
+0.0;0.0tan(x) -16711936 0;x·tanx=sin(t*tan(t)+cos(t));
+y=cos(t*tan(t)+sin(t));0.01;-10,10 -16771073 1;t·t·tan·*·t·cos·+·sin;t·t·tan·*·t·sin·+·cos;0.01;-10.0,10.0sin(x)=cos(y) -65464 2;x·sin;y·cos

@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="wrap_content"
+	android:layout_width="wrap_content">
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation="vertical"
+		android:gravity="top">
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="vertical">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:layout_width="match_parent"
+				android:text="图像"
+				android:background="#DADADA"/>
+
+			<RelativeLayout
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:orientation="horizontal"
+				android:gravity="center"
+				android:layout_marginTop="10dp">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_width="wrap_content"
+					android:text="抗锯齿"
+					android:layout_marginRight="5dp"
+					android:layout_alignParentLeft="true"
+					android:layout_centerVertical="true"/>
+
+				<Switch
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:id="@+id/settingSwitch1"
+					android:layout_alignParentRight="true"/>
+
+			</RelativeLayout>
+
+			<RelativeLayout
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:layout_marginTop="5dp">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_width="wrap_content"
+					android:text="函数默认颜色"
+					android:layout_centerVertical="true"/>
+
+				<View
+					android:background="?android:attr/dividerVertical"
+					android:layout_height="30dp"
+					android:layout_width="30dp"
+					android:layout_alignParentRight="true"
+					android:layout_marginRight="10dp"
+					android:id="@+id/settingColorView"/>
+
+			</RelativeLayout>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="vertical"
+			android:layout_marginTop="10dp">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:layout_width="match_parent"
+				android:text="函数"
+				android:background="#DADADA"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:layout_width="wrap_content"
+				android:text="设置一般函数精度"
+				android:layout_marginTop="5dp"/>
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:orientation="horizontal"
+				android:gravity="center">
+
+				<SeekBar
+					android:layout_height="wrap_content"
+					android:layout_width="160dp"
+					android:max="4"
+					android:id="@+id/settingSeekBar1"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_width="wrap_content"
+					android:id="@+id/settingTextView1"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="vertical">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:layout_width="match_parent"
+				android:text="查看模式"
+				android:background="#DADADA"/>
+
+			<RelativeLayout
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:orientation="horizontal"
+				android:gravity="center"
+				android:layout_marginTop="10dp"
+				android:layout_marginBottom="5dp">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_width="wrap_content"
+					android:text="显示曲率圆"
+					android:layout_marginRight="5dp"
+					android:layout_alignParentLeft="true"
+					android:layout_centerVertical="true"/>
+
+				<Switch
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:id="@+id/settingSwitch_qly"
+					android:layout_alignParentRight="true"/>
+
+			</RelativeLayout>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="vertical"
+			android:layout_marginTop="9dp">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:layout_width="match_parent"
+				android:text="二次曲线"
+				android:background="#DADADA"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:layout_width="wrap_content"
+				android:text="设置二次曲线绘图线程数量"
+				android:layout_marginTop="5dp"/>
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:orientation="horizontal"
+				android:gravity="center">
+
+				<SeekBar
+					android:layout_height="wrap_content"
+					android:layout_width="160dp"
+					android:max="5"
+					android:id="@+id/settingSeekBar2"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_width="wrap_content"
+					android:id="@+id/settingTextView2"/>
+
+			</LinearLayout>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:layout_width="wrap_content"
+				android:text="设置二次曲线精度"
+				android:layout_marginTop="5dp"/>
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:orientation="horizontal"
+				android:gravity="center">
+
+				<SeekBar
+					android:layout_height="wrap_content"
+					android:layout_width="160dp"
+					android:max="4"
+					android:id="@+id/settingSeekBar3"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_width="wrap_content"
+					android:id="@+id/settingTextView3"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="vertical">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:layout_width="match_parent"
+				android:text="参数"
+				android:background="#DADADA"
+				android:layout_marginTop="10dp"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:layout_width="wrap_content"
+				android:text="设置参数a的范围"/>
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:orientation="horizontal"
+				android:gravity="center">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_width="wrap_content"
+					android:text="min"/>
+
+				<EditText
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:ems="4"
+					android:id="@+id/settingEditText1"
+					android:hint="min"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_width="wrap_content"
+					android:text="max"
+					android:layout_marginLeft="5dp"/>
+
+				<EditText
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:ems="4"
+					android:id="@+id/settingEditText2"
+					android:hint="max"/>
+
+				<Button
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:text="确定"
+					android:layout_marginLeft="5dp"
+					android:onClick="oncsfw"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="vertical">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:layout_width="match_parent"
+				android:text="输入"
+				android:background="#DADADA"/>
+
+			<RelativeLayout
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:orientation="horizontal"
+				android:gravity="center"
+				android:layout_marginTop="10dp"
+				android:layout_marginBottom="5dp">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_width="wrap_content"
+					android:text="智能删除函数"
+					android:layout_marginRight="5dp"
+					android:layout_alignParentLeft="true"
+					android:layout_centerVertical="true"/>
+
+				<Switch
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:id="@+id/settingSwitch2"
+					android:layout_alignParentRight="true"/>
+
+			</RelativeLayout>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="vertical"
+			android:layout_marginTop="10dp">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:layout_width="match_parent"
+				android:text="坐标"
+				android:background="#DADADA"/>
+
+			<RelativeLayout
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:orientation="horizontal"
+				android:gravity="center"
+				android:layout_marginTop="10dp"
+				android:layout_marginBottom="5dp">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_width="wrap_content"
+					android:text="数字坐标"
+					android:layout_marginRight="5dp"
+					android:layout_alignParentLeft="true"
+					android:layout_centerVertical="true"/>
+
+				<Switch
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:id="@+id/settingSwitch_num"
+					android:layout_alignParentRight="true"/>
+
+			</RelativeLayout>
+
+			<RelativeLayout
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:orientation="horizontal"
+				android:gravity="center"
+				android:layout_marginTop="5dp"
+				android:layout_marginBottom="5dp">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_width="wrap_content"
+					android:text="π坐标"
+					android:layout_marginRight="5dp"
+					android:layout_alignParentLeft="true"
+					android:layout_centerVertical="true"/>
+
+				<Switch
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:id="@+id/settingSwitch_pai"
+					android:layout_alignParentRight="true"/>
+
+			</RelativeLayout>
+
+			<RelativeLayout
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:orientation="horizontal"
+				android:gravity="center"
+				android:layout_marginTop="5dp"
+				android:layout_marginBottom="5dp">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_width="wrap_content"
+					android:text="分数模式"
+					android:layout_marginRight="5dp"
+					android:layout_alignParentLeft="true"
+					android:layout_centerVertical="true"/>
+
+				<Switch
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:id="@+id/settingSwitch_fson"
+					android:layout_alignParentRight="true"/>
+
+			</RelativeLayout>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="vertical"
+			android:layout_marginTop="10dp">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:layout_width="match_parent"
+				android:text="界面"
+				android:background="#DADADA"/>
+
+			<RelativeLayout
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:orientation="horizontal"
+				android:gravity="center"
+				android:layout_marginTop="10dp"
+				android:layout_marginBottom="5dp">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_width="wrap_content"
+					android:text="显示网格"
+					android:layout_marginRight="5dp"
+					android:layout_alignParentLeft="true"
+					android:layout_centerVertical="true"/>
+
+				<Switch
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:id="@+id/settingSwitch_grid"
+					android:layout_alignParentRight="true"/>
+
+			</RelativeLayout>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:layout_width="wrap_content"
+				android:text="惯性"
+				android:layout_marginTop="5dp"/>
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:orientation="horizontal"
+				android:gravity="center"
+				android:layout_marginBottom="10dp">
+
+				<SeekBar
+					android:layout_height="wrap_content"
+					android:layout_width="160dp"
+					android:max="50"
+					android:id="@+id/settingSeekBar_gx"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_width="wrap_content"
+					android:id="@+id/settingTextView_gx"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</ScrollView>
+

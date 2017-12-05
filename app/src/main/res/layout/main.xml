@@ -1,11 +1,56 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="center">
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:card_view="http://schemas.android.com/apk/res-auto"
+	android:layout_height="match_parent"
+	android:layout_width="match_parent">
 
-    <TextView
-        android:text="@string/hello_world"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+	<com.graph.myapp.gra
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:id="@+id/maingra1"/>
 
-</LinearLayout>
+	<ImageButton
+		android:layout_height="50dp"
+		style="?android:attr/buttonBarButtonStyle"
+		android:layout_width="50dp"
+		android:src="@drawable/content"
+		android:layout_alignParentRight="true"
+		android:scaleType="centerInside"
+		android:onClick="on1"
+		android:id="@+id/mainImageButton1"/>
+
+	<ImageButton
+		android:layout_height="50dp"
+		style="?android:attr/buttonBarButtonStyle"
+		android:layout_width="50dp"
+		android:src="@drawable/gl"
+		android:id="@+id/mainImageButton2"
+		android:scaleType="centerInside"
+		android:onClick="ongl"
+		android:layout_toLeftOf="@id/mainImageButton1"/>
+
+	<android.support.v7.widget.CardView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		card_view:cardCornerRadius="30dp"
+		card_view:cardElevation="8dp"
+		android:background="#FAFAFA"
+		android:layout_gravity="left"
+		android:clickable="true"
+		android:foreground="?android:attr/selectableItemBackground"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentRight="true"
+		android:layout_margin="30dp"
+		android:id="@+id/mainCardView1">
+
+		<ImageView
+			android:layout_height="60dp"
+			android:layout_width="60dp"
+			android:src="@drawable/addcircle"
+			android:scaleType="centerInside"/>
+
+	</android.support.v7.widget.CardView>
+
+</RelativeLayout>
+

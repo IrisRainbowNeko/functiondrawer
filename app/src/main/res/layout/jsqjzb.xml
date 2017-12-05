@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content">
+
+	<include
+		layout="@layout/title"/>
+
+	<LinearLayout
+		android:gravity="center"
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<LinearLayout
+			android:gravity="center"
+			android:orientation="horizontal"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:focusable="true"
+			android:focusableInTouchMode="true">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="ρ="
+				android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+			<EditText
+				android:id="@+id/jsqjzbEditText1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:ems="10"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+
+			<EditText
+				android:id="@+id/jsqjzbEditText2"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:hint="精度"
+				android:ems="3"/>
+
+			<EditText
+				android:id="@+id/jsqjzbEditText3"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:hint="定义域min,max"
+				android:ems="8"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+
+			<ListView
+				android:id="@+id/jsqjzbListView1"
+				android:layout_width="40dp"
+				android:layout_height="280dp"/>
+
+			<LinearLayout
+				android:gravity="center"
+				android:orientation="vertical"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content">
+
+					<Button
+						android:id="@+id/jsqjzbButton01"
+						android:background="@drawable/button"
+						android:layout_width="50dp"
+						android:layout_height="50dp"
+						android:layout_marginRight="20dp"
+						android:text="1"/>
+
+					<Button
+						android:id="@+id/jsqjzbButton02"
+						android:background="@drawable/button"
+						android:layout_width="50dp"
+						android:layout_height="50dp"
+						android:text="2"/>
+
+					<Button
+						android:id="@+id/jsqjzbButton03"
+						android:background="@drawable/button"
+						android:layout_width="50dp"
+						android:layout_height="50dp"
+						android:layout_marginLeft="20dp"
+						android:text="3"/>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content">
+
+					<Button
+						android:id="@+id/jsqjzbButton04"
+						android:background="@drawable/button"
+						android:layout_width="50dp"
+						android:layout_height="50dp"
+						android:layout_marginRight="20dp"
+						android:text="4"/>
+
+					<Button
+						android:id="@+id/jsqjzbButton05"
+						android:background="@drawable/button"
+						android:layout_width="50dp"
+						android:layout_height="50dp"
+						android:text="5"/>
+
+					<Button
+						android:id="@+id/jsqjzbButton06"
+						android:background="@drawable/button"
+						android:layout_width="50dp"
+						android:layout_height="50dp"
+						android:layout_marginLeft="20dp"
+						android:text="6"/>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content">
+
+					<Button
+						android:id="@+id/jsqjzbButton07"
+						android:background="@drawable/button"
+						android:layout_width="50dp"
+						android:layout_height="50dp"
+						android:layout_marginRight="20dp"
+						android:text="7"/>
+
+					<Button
+						android:id="@+id/jsqjzbButton08"
+						android:background="@drawable/button"
+						android:layout_width="50dp"
+						android:layout_height="50dp"
+						android:text="8"/>
+
+					<Button
+						android:id="@+id/jsqjzbButton09"
+						android:background="@drawable/button"
+						android:layout_width="50dp"
+						android:layout_height="50dp"
+						android:layout_marginLeft="20dp"
+						android:text="9"/>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content">
+
+					<Button
+						android:id="@+id/jsqjzbButton00"
+						android:background="@drawable/button"
+						android:layout_width="50dp"
+						android:layout_height="50dp"
+						android:layout_marginRight="20dp"
+						android:text="0"/>
+
+					<Button
+						android:id="@+id/jsqjzbButtontg"
+						android:background="@drawable/button"
+						android:layout_width="50dp"
+						android:layout_height="50dp"
+						android:text="←"/>
+
+					<Button
+						android:background="@drawable/button"
+						android:layout_width="50dp"
+						android:layout_height="50dp"
+						android:layout_marginLeft="20dp"
+						android:text="确定"
+						android:onClick="onjzbyes"/>
+
+				</LinearLayout>
+
+				<GridView
+					android:id="@+id/jsqjzbGridView1"
+					android:layout_width="match_parent"
+					android:layout_height="100dp"
+					android:numColumns="3"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<GridView
+		android:id="@+id/jsqjzbGridView2"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:numColumns="9"
+		android:layout_alignParentBottom="true"/>
+
+	<Button
+		android:id="@+id/jzbxianshi"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="打开小键盘"
+		android:layout_alignParentRight="true"
+		android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
+

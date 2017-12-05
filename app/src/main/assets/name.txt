@@ -1,0 +1,1 @@
+心形(参数).fuc,心形.fuc,五角星.fuc,四叶草.fuc,示例函数.fuc,三角函数.fuc,幂函数.fuc,螺旋线.fuc,花环.fuc,凹三角形.fuc,y=cosx.fuc,滑稽.fuc,阴险.fuc,羽翼.fuc,四叶玫瑰线.fuc,红莲.fuc,心形极坐标.fuc,蝴蝶.fuc,双圆.fuc,椭圆极坐标.fuc

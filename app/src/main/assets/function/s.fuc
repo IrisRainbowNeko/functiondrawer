@@ -1,0 +1,1 @@
+0.0;0.0ρ=max(sin(θ),cos(θ))+max(-sin(θ),-cos(θ));0.01;-π,π -16711936 3;t·sin·t·cos·,·max·0·t·sin·-·0·t·cos·-·,·max·+·t·cos·*;t·sin·t·cos·,·max·0·t·sin·-·0·t·cos·-·,·max·+·t·sin·*;0.01;0·π·-,π

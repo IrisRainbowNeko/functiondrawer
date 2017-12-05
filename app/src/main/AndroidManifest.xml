@@ -1,21 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.graph.myapp" >
-
+    xmlns:tools="http://schemas.android.com/tools"
+	package="com.graph.myapp" >
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<!--使用cardview必须添加-->
+	<uses-sdk
+        tools:node="merge"/>
     <application
-        android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme"
+		android:name=".myapp">
         <activity
-            android:name=".MainActivity"
-            android:label="@string/app_name" >
-            <intent-filter>
+            android:label="@string/app_name"
+            android:name=".MainActivity" >
+            <intent-filter >
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+		<activity
+            android:name=".jsq"/>
+		<activity
+            android:name=".jsqcs"/>
+		<activity
+            android:label="@string/app_name"
+            android:name=".sm"/>
+		<activity
+            android:label="@string/app_name"
+            android:name=".setting"
+			android:windowSoftInputMode="stateHidden"/>
+		<activity
+            android:label="@string/app_name"
+            android:name=".jsqec"/>
+		<activity
+            android:name=".jsqjzb"/>
     </application>
 
 </manifest>

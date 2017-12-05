@@ -1,7 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">函数画图v6</string>
-    <string name="hello_world">Hello world!</string>
-
+    <string name="hello">Hello World, MainActivity!</string>
+    <string name="app_name">函数画图</string>
+	<string name="sm">
+	支持的运算符(a,b为参数):\n
+	+ 加 a+b\n
+	- 减 a-b\n
+	负数要加括号，如(-x)\n
+	* 乘 a*b\n
+	/ 除 a/b\n
+	^ 乘方 a^b(a的b次方)\n
+	√ 根号 a√b(a次根号b)(没输入a则a为2)\n
+	calculate() 计算结果\n\n
+	支持的函数:\n
+	正弦sin(a) 余弦cos(a) 正切tan(a)\n
+	反正弦arcsin(a) 反余弦arccos(a) 反正切arctan(a)\n
+	双曲正弦sinh(a) 双曲余弦cosh(a) 双曲正切tanh(a)\n
+	以a为底b的对数log(a,b) 常用对数lg(a) 自然对数ln(a) 绝对值abs(a)\n\n
+	常量:
+	π=3.14159265\n
+	e=2.71828183\n\n
+	输入格式:例如\n
+	(-x)^2+3*√x-log(2,x)*sin(2x)[-π,2π]\n
+	"[a,b]"表示定义域</string>
 </resources>
